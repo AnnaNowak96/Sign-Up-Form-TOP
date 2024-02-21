@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -8,26 +9,17 @@ body {
     background-color: lightblue;
 }
 
-img {
-    width: 35%;
-}
-
 .main_box {
     display: flex;
-    background-color: white;
     margin: 0 250px;
     height: 100vh;
+    background-color: #eef7fc;
 }
 
-.content {
-    padding: 100px 40px 20px 40px;
-    font-family: Verdana, sans-serif;
-    background-color: #eef7fc;
-    
-}
 .text_box {
     font-weight: 600;
     line-height: 1.6;
+    padding: 80px 40px 20px 40px;
 }
 
 .know {
@@ -43,18 +35,11 @@ button {
     border-radius: 8px;
     box-shadow: 3px 5px 8px #888888;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 button:hover {
     background-color: #30543e;
     color:#fcc000;
-}
-
-form {
-    background-color: white;
-    line-height: 40px;
-    
 }
 
 a {
@@ -77,5 +62,63 @@ a:hover {
     margin-top: 30px;
     gap: 8px;
     font-size: 15px;
-    
+    padding: 0 40px;
+ }
+
+ form {
+    background-color: white;
+    padding: 20px 40px;   
+}
+
+ input {
+    border: 2px solid #786f8c;
+    border-radius: 4px;
+    padding: 5px;
+ }
+
+
+ input:focus {
+    background-color: #f6fbfe;
+ }
+
+ form p {
+    font-weight:600;
+    font-size: 20px;
+ }
+
+ form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+    margin: 10px 0 10px 0;
+ }
+
+ .user-details .input-box input {
+    width: 100%;
+    height: 20px;
+ }
+
+ input:valid {
+    border-color: #119211;
+ }
+
+ #img-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+ }
+
+ #odin {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 80px;
+ }
+
+ #spring {
+    width: 100%;
  }
